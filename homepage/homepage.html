@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="/homepage.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <title>Homepage</title>
+</head>
+<body >
+
+    <nav id="navbar">
+        <ul>
+            <li class="list-items"><h2><a href="">Profile</a></h2></li>
+            <li class="list-items"><h2><a href="">Subscripition</a></h2></li>
+            <li class="list-items"><h2><a href="">forum</a></h2></li>
+            <li class="list-items"><h2><a href="">Logout</a></h2></li>
+        </ul>
+    </nav>
+    <div id="content-container" class="content">
+        <section id="feeds" class="feeds-container">
+            <div class="post-container">
+                <h3 class="username">Shubham Nakashe</h3>
+                <p class="product-desc">
+                    Prusa i3 MK3S+
+                    3D printers create parts from three-dimensional models, the mathematical representations of any three-dimensional
+                     surface created using computer-aided design (CAD) software or developed from 3D scan data.
+                     The design is then exported as an STL or OBJ file readable by print preparation software.
+                </p>
+                <div class="product-img" id="prod-img"></div>
+            </div>
+            <div class="post-container">
+                <h3 class="username">Vedant Chaskar</h3>
+                <p class="product-desc">
+                    Blakt Waterproof 220V Automatic Day Night On and Off Photocell LDR Control Sensor Switch for Lighting (6A)
+                    Automatic sensor light control switch/ it can use street light, garden lights, incandescent lamp, led lights
+                </p>
+                <div class="product-img" id="prod-img" style="background-image:url('./light-controller.jpg')"></div>
+            </div>
+        </section>
+        <section id="most-viewed">
+            <fieldset>
+                <legend>Create New Post</legend>
+                <div id="create-post">
+                    <h3>Product Description</h3>
+                    <textarea name="" cols="48" rows="10" id="get-description" style="font-size:1.1rem ;"></textarea>
+                    <button id="create-btn">Create</button>
+                    <input type="file" id="get-file" accept="image/*">
+                </div>
+            </fieldset>
+        </section>
+    </div>
+</body>
+</html>
